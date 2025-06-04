@@ -1,0 +1,12 @@
+# conda
+env*/            # if you keep envs inside repo (not recommended)
+# compiled
+__pycache__/
+*.py[cod]
+# outputs
+data/
+outputs/
+# Jupyter
+.ipynb_checkpoints/
+# OS cruft
+.DS_Store

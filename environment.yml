@@ -1,0 +1,9 @@
+name: autodatagen
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - openai=1.30.0
+  - tiktoken=0.7.*
+  - pytest
+  - python-dotenv
