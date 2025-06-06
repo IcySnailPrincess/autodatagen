@@ -12,7 +12,7 @@ class NodeType(str, Enum):
 
 
 class NodeSpec(BaseModel):
-    id: str                      = Field(..., regex=r"^[a-zA-Z0-9_]+$")
+    id: str                      = Field(..., pattern=r"^[a-zA-Z0-9_]+$")
     type: NodeType
     desc: str                    = Field(..., min_length=3, max_length=200)
     params: dict | None = None   # passed to Coding Agent later
